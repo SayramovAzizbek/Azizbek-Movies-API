@@ -1,0 +1,73 @@
+#site-body {
+    background-color: #b72e2e;
+}
+
+.moves-app-form {
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movies-app-name-search {
+    width: 450px;
+    padding: 5px 15px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.movies-app-name-search::placeholder {
+    font-weight: 700;
+}
+
+.movie-type-select {
+    padding: 6px 10px;
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+.movies-app-btn {
+    padding: 5px 40px;
+    font-weight: 700;
+    border: 2px solid;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.moviea-app-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.movie-app-item {
+    width: 290px;
+    padding: 20px;
+    margin: 0 10px 10px 10px;
+    background-color: #000000;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.movie-item-img {
+    width: 100%;
+    height: 400px;
+}
+
+.movie-item-title {
+    margin: 20px 0 10px 0;
+    font-size: 18px;
+}
+
+.movie-info-text-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.movie-item-year-text,
+.movie-item-type-text {
+    margin: 0;
+    font-size: 18px;
+}
