@@ -10,7 +10,6 @@ moviesAppForm.addEventListener("submit", (evt) => {
   )
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
       moviesAppList.innerHTML = "";
       data.Search.forEach((item) => {
         let movieItem = document.createElement("li");
@@ -31,17 +30,12 @@ moviesAppForm.addEventListener("submit", (evt) => {
         movieItemYearText.classList.add("movie-item-year-text");
         movieItemYearText.textContent = item.Year;
 
-        // const movieItemRatingText = document.createElement("p");
-        // movieItemRatingText.classList.add("movie-item-rating-text");
-        // movieItemRatingText.textContent = item.rating;
-
         const movieItemTypeText = document.createElement("p");
         movieItemTypeText.classList.add("movie-item-type-text");
         movieItemTypeText.textContent = `Type: ${item.Type}`;
 
         movieItem.appendChild(movieItemImg);
         movieItem.appendChild(movieItemTitle);
-        // movieInfoTextBox.appendChild(movieItemRatingText);
         movieInfoTextBox.appendChild(movieItemYearText);
         movieInfoTextBox.appendChild(movieItemTypeText);
         movieItem.appendChild(movieInfoTextBox);
